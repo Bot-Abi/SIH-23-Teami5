@@ -17,7 +17,7 @@ const Input = (props: {
 }) => {
   return (
     <div className={" flex " + (props.horizontal ? " items-center gap-[20px] w-[100%]" : " flex-col") }>
-      <label className="text-[#333333] opacity-70 font-semibold text-[14px]">
+      <label className="text-[#333333] opacity-70 font-semibold text-[20px]">
         {props?.label}{" "}
         {props?.required && <span className="text-[red]">*</span>}
       </label>
@@ -26,7 +26,7 @@ const Input = (props: {
         name={props?.name}
         type={props?.type}
         className={
-          "border-[1px] text-[14px] rounded-[4px] p-[10px] mt-[5px] " +
+          "border-[1px] text-[20px] rounded-[4px] p-[10px] mt-[5px] " +
           props?.className
         }
         placeholder={props?.placeholder}

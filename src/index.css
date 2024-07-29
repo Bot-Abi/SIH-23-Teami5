@@ -234,3 +234,28 @@ body {
 
 .hover-pointer {
   cursor: pointer; }
+
+  .ant-select-dropdown {
+    font-size: 20px;
+    width: auto; 
+  }
+  
+  .ant-select-selection-placeholder {
+    font-size: 20px; 
+  }
+
+  .ant-select-selection-item {
+    font-size: 20px;
+  }
+
+  .custom-table {
+    font-size: 20px; 
+  }
+  
+  .custom-table .ant-table-thead th {
+    font-size: 20px; 
+  }
+  
+  .custom-table .ant-table-tbody td {
+    font-size: 20px;
+  }

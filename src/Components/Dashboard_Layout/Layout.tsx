@@ -6,8 +6,8 @@ export default function Layout() {
   return (
   
   <div className='flex flex-row min-h-screen w-screen overflow-hidden overflow-x-hidden'>
-  {/* <Sidebar/> */}
-  <div className='flex-1 flex flex-col'>
+  <Sidebar/>
+  <div className='flex-1 flex flex-col ml-[250px]'>
     <Header/>
     <div className="flex-1 overflow-y-auto pb-16 pt-4 px-4">
       {<Outlet/>}

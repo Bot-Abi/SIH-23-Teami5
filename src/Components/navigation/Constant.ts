@@ -25,3 +25,10 @@ export const DOC_DASHBOARD = "/dashboard/doctor";
 
 export const FORGOT = "/forgot";
 export const RESET = "/reset";
+
+
+//New Flow//
+
+//Receptionist
+
+export const RECEP = "/dashboard/receptionist"

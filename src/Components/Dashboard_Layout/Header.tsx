@@ -55,7 +55,7 @@ export default function Header() {
 
   return (
     <div>
-    <div className="bg-gray-100 h-16 px-4 flex items-center justify-end mr-2 shadow-md">
+    <div className="bg-gray-100 h-16 px-4 flex items-center justify-end mr-2 shadow-md ">
     <div className="bg-dark text-black text-3xl font-bold py-4 px-10 absolute left-12">
     {/* {isAdmin ? 'Admin' : 'Doctor'} */}
     </div>
@@ -69,7 +69,7 @@ export default function Header() {
             className="w-8 h-8 rounded-full"
             />
               <span className="ml-2 font-medium">
-                {user?.name||"undefined"}
+                {user?.name||"Admin"}
               </span>
              
             </div>

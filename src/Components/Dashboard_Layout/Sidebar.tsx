@@ -5,7 +5,7 @@ import { FaThLarge } from "react-icons/fa";
 import { BsCalendarCheck,BsFillPersonFill} from "react-icons/bs";
 import { PiMessengerLogoLight } from "react-icons/pi";
 import { Link, useNavigate } from 'react-router-dom';
-import { DASHBOARD_HOME,ADMIN,PATIENT_DASHBOARD_REPORT } from '../navigation/Constant';
+import { DASHBOARD_HOME,ADMIN,PATIENT_DASHBOARD_REPORT, RECEP, DOC_DASHBOARD } from '../navigation/Constant';
 export default function Sidebar() {
   const navigate = useNavigate();
 
@@ -23,11 +23,11 @@ export default function Sidebar() {
   };
   
   return (
-    <div className='bg-neutral-200 w-[250px] p-3 flex flex-col'>
+    <div className='bg-neutral-200 w-[250px] p-3 flex flex-col fixed h-full'>
        <div className='flex items-center justify-between mb-4'>
         <div className='flex items-center space-x-2'>
           <FaUserDoctor fontSize={30} />
-          <span className='text-base font-semibold py-4'>Doc Care</span>
+          <span className='text-base font-semibold py-4'>Team i5</span>
         </div>
         <span className='flex'>
           <AiOutlineMenu fontSize={15} />
@@ -35,8 +35,10 @@ export default function Sidebar() {
       </div>
       {user.accessLevel === 'patient' && (
         <>
-        <div className='tab-item' onClick={() => { navigate(DASHBOARD_HOME);}}>Dashboard</div>
-        <div className='tab-item' onClick={() => { navigate(PATIENT_DASHBOARD_REPORT);}}>My Reports</div>
+        {/* <div className='tab-item' onClick={() => { navigate(DASHBOARD_HOME);}}>Dashboard</div>
+        <div className='tab-item' onClick={() => { navigate(PATIENT_DASHBOARD_REPORT);}}>My Reports</div> */}
+        <div className='tab-item' onClick={() => { navigate(RECEP);}}>Receptionist</div>
+        <div className='tab-item' onClick={() => { navigate(DOC_DASHBOARD);}}>Doctor</div>
         </>
       )}
 
